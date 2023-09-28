@@ -1,0 +1,25 @@
+<a [routerLink]="['/']">Back</a>
+<div class="container">
+    <h4><b>Find Result</b></h4>
+    <form [formGroup]="searchResult" (ngSubmit)="fetchResult()">
+        <div class="form-group row">
+            <label for="roll" class="col-sm-2 col-form-label">Roll No.</label>
+                <div class="col-sm-4">
+                    <input type="text" pattern="^\d{1,5}$" #roll class="form-control" name="roll" placeholder="eg. 1111" formControlName="roll" required />
+                </div>
+        </div>
+        <br>
+        
+        <div class="form-group row">
+            <label for="name" class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-4">
+                    <input type="text" pattern="^[A-Za-z]+$" #name class="form-control" name="name" placeholder="eg. Aman" formControlName="name" required />
+                </div>
+        </div>
+        <br>
+        <div>
+            <button class="btn btn-primary" type="submit">Search</button>
+            <button class="btn btn-default" type="reset" style="margin-left: 45px; background-color: snow;">Clear</button>
+        </div>
+    </form>
+</div>

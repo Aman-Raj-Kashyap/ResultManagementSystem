@@ -1,0 +1,20 @@
+.header{
+    background-color: aquamarine;
+    padding: 20px;
+    margin: 0;
+    border: 2px solid aqua;
+}
+h3{
+    font-weight: bold;
+    text-align: center;
+}
+.btn{
+    margin-top: -40px;
+    float: right;
+    border: 2px solid orange;
+    background-color: lightyellow;
+    padding: 5px 20px 5px 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    color: black;
+}

@@ -1,0 +1,31 @@
+a{
+    margin: 10px;
+    font-size:large;
+}
+
+h4{
+    margin-bottom: 30px;
+}
+
+.btn{
+    border: 1px solid;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 5px 35px 5px 35px;
+}
+
+.col-sm-6{
+    font-weight: bold;
+}
+
+.container{
+    padding: 0px 40px 0px 100px;
+}
+
+input.ng-invalid{
+    border-left: 5px solid red;
+}
+
+input.ng-valid{
+    border-left: 5px solid green;
+}

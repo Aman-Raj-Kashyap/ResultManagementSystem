@@ -1,0 +1,28 @@
+<a [routerLink]="['/searchResult']">Back</a>
+
+
+<div class="container">
+    <h4>Result</h4>
+    <form [formGroup]="showResult">
+        <div class="text-center">
+            <label for="roll" class="center-block">Roll No :</label>
+            <input type="text" class="col-sm-2" id="roll" name="roll" formControlName="roll" readonly required />
+        </div>
+        <br>
+        <div class="text-center">
+            <label for="name" class="center-block">Name :</label>
+            <input type="text" class="col-sm-2" id="name" name="name" formControlName="name" readonly required />
+        </div>
+        <br>
+        <div class="text-center">
+            <label for="dob" class="center-block">Date of Birth :</label>
+            <input type="text" class="col-sm-2" id="dob" name="dob" formControlName="dob" readonly required />
+        </div>
+        <br>
+        <div class="text-center">
+            <label for="score" class="center-block">Score :</label>
+            <input type="text" class="col-sm-2" id="score" name="score" formControlName="score" readonly required />
+        </div>
+        <br>
+    </form>
+</div>

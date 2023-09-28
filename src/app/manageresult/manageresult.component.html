@@ -1,0 +1,47 @@
+<a [routerLink]="['/']">Back</a>
+<div class="container">
+    <div class="col-sm-2">
+        <p style="font-weight: bold;">Total {{list.length}} Student</p>
+    </div>
+
+
+    <div class="heading2">
+        <button class="btn btn-primary" (click)="add()" style="margin-bottom: 30px;">Add Record</button>
+    </div>
+
+    <div class="container-fluid"  style="height: 50vh; overflow-y: scroll;">
+        <div class="row ">
+            <table class="table table-bordered border-dark table-responsive-sm" style="border: 2px solid; border-radius: 10px;">
+                <thead class="thead-dark text-center" style="border: 2px solid;">
+                    <tr class="text-center" style="border: 2px solid;background-color:rgb(211, 204, 194);">
+                        <th>Roll No.</th>
+                        <th>Name</th>
+                        <th>Date of Birth</th>
+                        <th>Score</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center" *ngIf="list.length >0">
+                    <tr class="tr-val" style="padding: 10px;border: 2px solid;" *ngFor="let item of list">
+                        <td>{{item.roll}}</td>
+                        <td>{{item.name}}</td>
+                        <td>{{item.dob}}</td>
+                        <td>{{item.score}}</td>
+                        <td>
+                            <button class="bg-transparent btn-sm border-0"  routerLink="/updateResult/{{item.id}}" value="edit" onclick="">
+								<img src="../assets/edit.png" height="30px" width="30px"/>
+							</button>
+							<button class="bg-transparent btn-sm border-0" (click)="deleteResult(item.id)" style="margin-left: 40px;" value="delete" onclick="">
+								<img src="../assets/delete.png" height="25px" width="25px" alt=""/>
+							</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="text-align:center;" *ngIf="list.length==0">
+                <h5>No Result found!</h5>
+            </div>
+        </div>
+    </div>
+
+</div>

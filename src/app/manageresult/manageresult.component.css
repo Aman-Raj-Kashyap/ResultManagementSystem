@@ -1,0 +1,19 @@
+a{
+    margin: 10px;
+    font-size:large;
+}
+.col-sm-2{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.heading2{
+    margin-top: -20px;
+    /* margin-bottom: -10px; */
+    text-align: right;
+}
+tr{
+    background-color: lavenderblush;
+}
+tr:nth-child(odd) {
+    background-color: lightyellow;
+}
